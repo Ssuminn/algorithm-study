@@ -1,27 +1,14 @@
-import java.util.*;
 class Solution {
-	 public String solution(int a, int b) {
-		 String day = "" ; 
+    public String solution(int a, int b) {
+        String[] days = {"FRI", "SAT", "SUN", "MON", "TUE", "WED", "THU"}; // 1월 1일은 금요일
+        int[] months = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        int date = 0; // 총 일수
+        
+        for(int i = 0; i < a - 1; i++) { // a월전까지의 총일수 구하기
+            date += months[i];
+        }
+        date += b - 1; // b의 일수 만큼 더 더해주기
 
-		 Calendar cal = Calendar.getInstance(); 
-		 cal.set(2016,a -1,b);
-		 int dayNum = cal.get(Calendar.DAY_OF_WEEK); 
-		 switch(dayNum){ 
-		 	case 1: day = "SUN"; 
-		 	break; 
-		 	case 2: day = "MON"; 
-		 	break; 
-		 	case 3: day = "TUE"; 
-		 	break; 
-		 	case 4: day = "WED"; 
-		 	break; 
-		 	case 5: day = "THU"; 
-		 	break; 
-		 	case 6: day = "FRI";
-		 	break; 
-		 	case 7: day = "SAT"; 
-            		break; 
-		 } 
-		 return day ;
-	 }
+        return days[(date) % 7];
+    }
 }
