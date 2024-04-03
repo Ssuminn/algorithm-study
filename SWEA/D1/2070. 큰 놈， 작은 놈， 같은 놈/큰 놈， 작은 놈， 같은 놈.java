@@ -45,16 +45,16 @@ class Solution
 		{
 			String result = "";
 			int num1 = sc.nextInt(); // 첫 번째 수 입력
-          	int num2 = sc.nextInt(); // 두 번째 수 입력
+          		int num2 = sc.nextInt(); // 두 번째 수 입력
 			if(num1 > num2) {
-            	result = ">";
-            }
+            			result = ">";
+            		}
 			else if(num1 < num2){
-            	result = "<";    
-            }
-            else{
-            	result = "=";
-            }
+            			result = "<";    
+            		}
+            		else{
+            			result = "=";
+            		}
 			System.out.println("#" + test_case + " " + result);
 		}
 	}
