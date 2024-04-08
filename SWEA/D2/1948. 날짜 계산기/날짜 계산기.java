@@ -28,11 +28,11 @@ class Solution {
                 int m = months[i - 1];
                 // 첫 번째 달의 경우, 해당 달의 남은 일 수만큼 더해줌
                 if (i == month1) {
-                    m -= day1-1;
+                    m -= day1-1; // 남은 일 수 계산
                 }
                 // 마지막 달의 경우, 해당 달의 일 수로 대체
                 if (i == month2) {
-                    m = day2;
+                    m = day2; // 해당 달의 일 수
                 }
                 // 총 일 수에 계산된 일 수 더하기
                 totalDays += m;
