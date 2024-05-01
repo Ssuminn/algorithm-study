@@ -13,7 +13,7 @@ class Solution
 	
 		for(int test_case = 1; test_case <= T; test_case++)
 		{
-            int cnt = 0;
+           		int cnt = 0;
 			int ans = 0;
 			boolean[] visited = new boolean[10];
 			int n = sc.nextInt();
