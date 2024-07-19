@@ -19,3 +19,4 @@ class Solution {
         return max;
     }
 }
+// 추가로 Arrays.sort 사용하여 정열 후 맨 앞 2개, 맨 뒤 2개 비교 후 최댓값 찾기 (음수의 곱, 양수의 곱 비교)
