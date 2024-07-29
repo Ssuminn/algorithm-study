@@ -7,7 +7,6 @@ class Solution {
         for(int i = 0; i < strArr.length; i+=2) {
             answer[i] = strArr[i].toLowerCase();
         }
-        
         // 홀수 인덱스의 문자열을 대문자로 변환
         for(int i = 1; i < strArr.length; i+=2) {
             answer[i] = strArr[i].toUpperCase();
