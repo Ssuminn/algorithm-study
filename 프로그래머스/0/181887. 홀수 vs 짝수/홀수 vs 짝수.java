@@ -12,6 +12,5 @@ class Solution {
         
         // 삼항연산자
         return even > odd ? even : odd;
-
     }
 }
