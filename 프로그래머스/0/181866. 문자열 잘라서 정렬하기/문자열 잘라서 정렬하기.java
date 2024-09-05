@@ -14,10 +14,10 @@ class Solution {
             }
         }
 
-        // String[] answer =  new String[list.size()];
+        String[] answer =  list.toArray(new String[list.size()]);
         // list.toArray(answer);
         
-        String[] answer = list.toArray(new String[0]);
+        // String[] answer = list.toArray(new String[0]);
         
         
         // 사전순 정렬
