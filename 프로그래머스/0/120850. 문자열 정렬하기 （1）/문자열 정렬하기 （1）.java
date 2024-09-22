@@ -13,6 +13,11 @@ class Solution {
             answer[i] = Integer.parseInt(arr[i]);
         }
         
+        // for(int i = 0; i < arr.length(); i++){
+        //     // 문자열 -> 숫자 (아스키)
+        //     answer[i] = my_string.charAt(i) - '0';
+        // }
+        
         Arrays.sort(answer);
         
         return answer;
